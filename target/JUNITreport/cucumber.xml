@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="20.511">
+<testcase classname="TestLeaf buttons functionality" name="test edit button" time="3.833">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Click edit button.....................................................passed
+Then Enter your email address and check- field one..........................passed
+Then Append a text and press keyboard tab field two.........................passed
+Then Get default text entered - field three.................................passed
+Then Clear the text - field four............................................passed
+Then Confirm that edit field is disabled - field five.......................passed
+Then go to home page........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test button button" time="1.452">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Click button button...................................................passed
+Then Click button to travel home page.......................................passed
+Then Find position of button (x,y)..........................................passed
+Then Find button color......................................................passed
+Then Find the height and width..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test hyperlink button" time="0.701">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Click HyperLink button................................................passed
+Then Click Go to Home Page..................................................passed
+Then Find where am supposed to go without clicking me?......................passed
+Then Verify am I broken?....................................................passed
+Then Go to Home Page (Interact with same link name).........................passed
+Then How many links are available in this page?.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test Image button" time="1.659">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Clic image button.....................................................passed
+Given Click on this image to go home page...................................passed
+Then Am I Broken Image?.....................................................passed
+Then Click me using Keyboard or Mouse.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test DropDown button" time="0.746">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Click DropDown button.................................................passed
+Then Select training program using Index....................................passed
+Then Select training program using Text.....................................passed
+Then Select training program using Value....................................passed
+Then Get the number of dropdown options.....................................passed
+Then You can also use sendKeys to select....................................passed
+Then Select your programs...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test Rudio button" time="0.421">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Click rudio button....................................................passed
+Then Are you enjoying the classes?..........................................passed
+Then Find default selected radio button.....................................passed
+Then Select your age group (Only if choice was not selected)................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test Check Boxes" time="0.836">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Click CheckBox button.................................................passed
+Then Select the languages that you know?....................................passed
+Then Confirm Selenium is checked............................................passed
+Then DeSelect only checked..................................................passed
+Then Select all below checkboxes............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test Table button" time="0.351">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Clikc table button....................................................passed
+Then Get the count of number of columns.....................................passed
+Then Get the count of number of rows........................................passed
+Then Get the progress value of Learn to interact with Elements..............passed
+Then Check the vital task for the least completed progress..................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test Alert button" time="0.547">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Click alert button....................................................passed
+Then Click the button to display a alert box................................passed
+Then Click the button to display a confirm box..............................passed
+Then Click the button to display a prompt box...............................passed
+Then Click the button to learn line-breaks in an alert......................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test Frame button" time="0.689">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Click Frame button....................................................passed
+Then I am inside a frame....................................................passed
+Then I am inside a nested frame.............................................passed
+Then Find total number of frames............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test Frame button 2" time="8.423">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Click Window button...................................................passed
+Then Click button to open home page in New Window...........................passed
+Then Find the number of opened windows......................................passed
+Then Close all except this window...........................................passed
+Then Wait for 2 new Windows to open.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="TestLeaf buttons functionality" name="test calendar button" time="0.682">
+<system-out><![CDATA[Given check inside home page, if not , then go to home page.................passed
+Given Clikc calendar button.................................................passed
+Then Select 10th day of following month.....................................passed
+Then driver close...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

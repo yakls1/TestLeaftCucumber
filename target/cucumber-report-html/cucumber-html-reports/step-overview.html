@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>TestLeaftCucumber</td>
+                          <td>1</td>
+                        <td>14 Oct 2021, 21:24</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.am_i_broken_image()</td>
+                <td>1</td>
+                <td class="duration" data-value="144000000">144ms</td>
+                <td class="duration" data-value="144000000">144ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.append_a_text_and_press_keyboard_tab_field_two()</td>
+                <td>1</td>
+                <td class="duration" data-value="129000000">129ms</td>
+                <td class="duration" data-value="129000000">129ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.are_you_enjoying_the_classes()</td>
+                <td>1</td>
+                <td class="duration" data-value="52000000">052ms</td>
+                <td class="duration" data-value="52000000">052ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.check_inside_home_page_if_not_then_go_to_home_page()</td>
+                <td>12</td>
+                <td class="duration" data-value="3379000000">3s 379ms</td>
+                <td class="duration" data-value="281583333">281ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.check_the_vital_task_for_the_least_completed_progress()</td>
+                <td>1</td>
+                <td class="duration" data-value="66000000">066ms</td>
+                <td class="duration" data-value="66000000">066ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.clear_the_text_field_four()</td>
+                <td>1</td>
+                <td class="duration" data-value="78000000">078ms</td>
+                <td class="duration" data-value="78000000">078ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.clic_image_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="131000000">131ms</td>
+                <td class="duration" data-value="131000000">131ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_alert_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="117000000">117ms</td>
+                <td class="duration" data-value="117000000">117ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_button_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="1115000000">1s 115ms</td>
+                <td class="duration" data-value="1115000000">1s 115ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_button_to_open_home_page_in_new_window()</td>
+                <td>1</td>
+                <td class="duration" data-value="1157000000">1s 157ms</td>
+                <td class="duration" data-value="1157000000">1s 157ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_button_to_travel_home_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="146000000">146ms</td>
+                <td class="duration" data-value="146000000">146ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_check_box_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="103000000">103ms</td>
+                <td class="duration" data-value="103000000">103ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_drop_down_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="128000000">128ms</td>
+                <td class="duration" data-value="128000000">128ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_edit_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="150000000">150ms</td>
+                <td class="duration" data-value="150000000">150ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_frame_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="146000000">146ms</td>
+                <td class="duration" data-value="146000000">146ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_go_to_home_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="127000000">127ms</td>
+                <td class="duration" data-value="127000000">127ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_hyper_link_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="141000000">141ms</td>
+                <td class="duration" data-value="141000000">141ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_me_using_keyboard_or_mouse()</td>
+                <td>1</td>
+                <td class="duration" data-value="1214000000">1s 214ms</td>
+                <td class="duration" data-value="1214000000">1s 214ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_on_this_image_to_go_home_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="123000000">123ms</td>
+                <td class="duration" data-value="123000000">123ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_rudio_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="102000000">102ms</td>
+                <td class="duration" data-value="102000000">102ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_the_button_to_display_a_alert_box()</td>
+                <td>1</td>
+                <td class="duration" data-value="54000000">054ms</td>
+                <td class="duration" data-value="54000000">054ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_the_button_to_display_a_confirm_box()</td>
+                <td>1</td>
+                <td class="duration" data-value="96000000">096ms</td>
+                <td class="duration" data-value="96000000">096ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_the_button_to_display_a_prompt_box()</td>
+                <td>1</td>
+                <td class="duration" data-value="105000000">105ms</td>
+                <td class="duration" data-value="105000000">105ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_the_button_to_learn_line_breaks_in_an_alert()</td>
+                <td>1</td>
+                <td class="duration" data-value="61000000">061ms</td>
+                <td class="duration" data-value="61000000">061ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.click_window_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="115000000">115ms</td>
+                <td class="duration" data-value="115000000">115ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.clikc_calendar_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="307000000">307ms</td>
+                <td class="duration" data-value="307000000">307ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.clikc_table_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="137000000">137ms</td>
+                <td class="duration" data-value="137000000">137ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.close_all_except_this_window()</td>
+                <td>1</td>
+                <td class="duration" data-value="543000000">543ms</td>
+                <td class="duration" data-value="543000000">543ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.confirm_selenium_is_checked()</td>
+                <td>1</td>
+                <td class="duration" data-value="53000000">053ms</td>
+                <td class="duration" data-value="53000000">053ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.confirm_that_edit_field_is_disabled_field_five()</td>
+                <td>1</td>
+                <td class="duration" data-value="29000000">029ms</td>
+                <td class="duration" data-value="29000000">029ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.de_select_only_checked()</td>
+                <td>1</td>
+                <td class="duration" data-value="126000000">126ms</td>
+                <td class="duration" data-value="126000000">126ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.driver_close()</td>
+                <td>1</td>
+                <td class="duration" data-value="85000000">085ms</td>
+                <td class="duration" data-value="85000000">085ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.enter_your_email_address_and_check_field_one()</td>
+                <td>1</td>
+                <td class="duration" data-value="129000000">129ms</td>
+                <td class="duration" data-value="129000000">129ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.find_button_color()</td>
+                <td>1</td>
+                <td class="duration" data-value="61000000">061ms</td>
+                <td class="duration" data-value="61000000">061ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.find_default_selected_radio_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="114000000">114ms</td>
+                <td class="duration" data-value="114000000">114ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.find_position_of_button_x_y()</td>
+                <td>1</td>
+                <td class="duration" data-value="28000000">028ms</td>
+                <td class="duration" data-value="28000000">028ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.find_the_height_and_width()</td>
+                <td>1</td>
+                <td class="duration" data-value="56000000">056ms</td>
+                <td class="duration" data-value="56000000">056ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.find_the_number_of_opened_windows()</td>
+                <td>1</td>
+                <td class="duration" data-value="1127000000">1s 127ms</td>
+                <td class="duration" data-value="1127000000">1s 127ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.find_total_number_of_frames()</td>
+                <td>1</td>
+                <td class="duration" data-value="13000000">013ms</td>
+                <td class="duration" data-value="13000000">013ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.find_where_am_supposed_to_go_without_clicking_me()</td>
+                <td>1</td>
+                <td class="duration" data-value="44000000">044ms</td>
+                <td class="duration" data-value="44000000">044ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.get_default_text_entered_field_three()</td>
+                <td>1</td>
+                <td class="duration" data-value="39000000">039ms</td>
+                <td class="duration" data-value="39000000">039ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.get_the_count_of_number_of_columns()</td>
+                <td>1</td>
+                <td class="duration" data-value="17000000">017ms</td>
+                <td class="duration" data-value="17000000">017ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.get_the_count_of_number_of_rows()</td>
+                <td>1</td>
+                <td class="duration" data-value="12000000">012ms</td>
+                <td class="duration" data-value="12000000">012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.get_the_number_of_dropdown_options()</td>
+                <td>1</td>
+                <td class="duration" data-value="24000000">024ms</td>
+                <td class="duration" data-value="24000000">024ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.get_the_progress_value_of_learn_to_interact_with_elements()</td>
+                <td>1</td>
+                <td class="duration" data-value="29000000">029ms</td>
+                <td class="duration" data-value="29000000">029ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.go_to_home_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="1061000000">1s 061ms</td>
+                <td class="duration" data-value="1061000000">1s 061ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.go_to_home_page_interact_with_same_link_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="132000000">132ms</td>
+                <td class="duration" data-value="132000000">132ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.how_many_links_are_available_in_this_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="29000000">029ms</td>
+                <td class="duration" data-value="29000000">029ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.i_am_inside_a_frame()</td>
+                <td>1</td>
+                <td class="duration" data-value="128000000">128ms</td>
+                <td class="duration" data-value="128000000">128ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.i_am_inside_a_nested_frame()</td>
+                <td>1</td>
+                <td class="duration" data-value="304000000">304ms</td>
+                <td class="duration" data-value="304000000">304ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.select_10th_day_of_following_month()</td>
+                <td>1</td>
+                <td class="duration" data-value="156000000">156ms</td>
+                <td class="duration" data-value="156000000">156ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.select_all_below_checkboxes()</td>
+                <td>1</td>
+                <td class="duration" data-value="390000000">390ms</td>
+                <td class="duration" data-value="390000000">390ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.select_the_languages_that_you_know()</td>
+                <td>1</td>
+                <td class="duration" data-value="62000000">062ms</td>
+                <td class="duration" data-value="62000000">062ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.select_training_program_using_index()</td>
+                <td>1</td>
+                <td class="duration" data-value="161000000">161ms</td>
+                <td class="duration" data-value="161000000">161ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.select_training_program_using_text()</td>
+                <td>1</td>
+                <td class="duration" data-value="126000000">126ms</td>
+                <td class="duration" data-value="126000000">126ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.select_training_program_using_value()</td>
+                <td>1</td>
+                <td class="duration" data-value="123000000">123ms</td>
+                <td class="duration" data-value="123000000">123ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.select_your_age_group_only_if_choice_was_not_selected()</td>
+                <td>1</td>
+                <td class="duration" data-value="54000000">054ms</td>
+                <td class="duration" data-value="54000000">054ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.select_your_programs()</td>
+                <td>1</td>
+                <td class="duration" data-value="49000000">049ms</td>
+                <td class="duration" data-value="49000000">049ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.verify_am_i_broken()</td>
+                <td>1</td>
+                <td class="duration" data-value="126000000">126ms</td>
+                <td class="duration" data-value="126000000">126ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.wait_for_new_windows_to_open(java.lang.Integer)</td>
+                <td>1</td>
+                <td class="duration" data-value="5333000000">5s 333ms</td>
+                <td class="duration" data-value="5333000000">5s 333ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Leaft_StepDefination.LeaftSteps.you_can_also_use_send_keys_to_select()</td>
+                <td>1</td>
+                <td class="duration" data-value="103000000">103ms</td>
+                <td class="duration" data-value="103000000">103ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>61</td>
+              <td>72</td>
+              <td class="duration">20s 489ms</td>
+              <td class="duration">284ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
